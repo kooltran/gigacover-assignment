@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/gigacover-assignment/static/js/main.9a2b4f70.chunk.js",
+    "main.js.map": "/gigacover-assignment/static/js/main.9a2b4f70.chunk.js.map",
+    "runtime-main.js": "/gigacover-assignment/static/js/runtime-main.e9674f16.js",
+    "runtime-main.js.map": "/gigacover-assignment/static/js/runtime-main.e9674f16.js.map",
+    "static/js/2.b1530f33.chunk.js": "/gigacover-assignment/static/js/2.b1530f33.chunk.js",
+    "static/js/2.b1530f33.chunk.js.map": "/gigacover-assignment/static/js/2.b1530f33.chunk.js.map",
+    "index.html": "/gigacover-assignment/index.html",
+    "precache-manifest.6ec2c1b737dbe130aabf7333d233834f.js": "/gigacover-assignment/precache-manifest.6ec2c1b737dbe130aabf7333d233834f.js",
+    "service-worker.js": "/gigacover-assignment/service-worker.js",
+    "static/js/2.b1530f33.chunk.js.LICENSE": "/gigacover-assignment/static/js/2.b1530f33.chunk.js.LICENSE",
+    "static/media/loading.svg": "/gigacover-assignment/static/media/loading.e6e9715c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9674f16.js",
+    "static/js/2.b1530f33.chunk.js",
+    "static/js/main.9a2b4f70.chunk.js"
+  ]
+}
