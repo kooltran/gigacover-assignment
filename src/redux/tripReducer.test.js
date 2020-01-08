@@ -12,7 +12,7 @@ describe("trip reducer", () => {
       })
     ).toEqual({
       ...initialState,
-      fetchTripRequest: true
+      fetchState: "loading"
     });
   });
 
@@ -24,8 +24,7 @@ describe("trip reducer", () => {
       })
     ).toEqual({
       ...initialState,
-      fetchTripRequest: false,
-      fetchTripSuccess: false,
+      fetchState: "success",
       data: "A"
     });
   });
@@ -38,8 +37,7 @@ describe("trip reducer", () => {
       })
     ).toEqual({
       ...initialState,
-      fetchTripRequest: false,
-      fetchTripFail: true,
+      fetchState: "fail",
       error: "B"
     });
   });
