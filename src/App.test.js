@@ -1,41 +1,36 @@
 import React from "react";
-import { Provider } from "react-redux";
-import renderer from "react-test-renderer";
-import App from "./App";
-import thunk from "redux-thunk";
-import { shallowToJson } from "enzyme-to-json";
-import configureStore from "redux-mock-store";
-
-const mockStore = configureStore([thunk]);
-
-const initialState = {
-  data: {
-    trips: []
-  }
-};
-
-const baseProps = {
-  data: {},
-  fetchTripRequest: () => null
-};
+import { shallow } from "enzyme";
+import { App } from "./App";
 
 describe("renders App component", () => {
-  let store, component;
-  beforeEach(() => {
-    store = mockStore(initialState);
-    store.dispatch = jest.fn();
-    component = renderer.create(
-      <Provider store={store}>
-        <App {...baseProps} />
-      </Provider>
-    );
-  });
+  const baseProps = {
+    fetchState: "loading",
+    tripAction: jest.fn(),
+    data: {
+      trips: [
+        {
+          distance: 12,
+          duration: 123,
+          start_time: "2000-11-22T03:44:55+0000",
+          end_time: "2000-11-22T03:55:66+0000",
+          trip_id: 10000
+        },
+        {
+          distance: 13,
+          duration: 456,
+          start_time: "2000-11-22T03:44:55+0000",
+          end_time: "2000-11-22T03:55:66+0000",
+          trip_id: 1111
+        }
+      ]
+    }
+  };
 
-  it("should render with given state from Redux store", () => {
-    expect(shallowToJson(component)).toMatchSnapshot();
+  it("should render properly with loading state", () => {
+    expect(shallow(<App {...baseProps} />)).toMatchSnapshot();
   });
 
   it("should dispatch an action on componentDidMount", () => {
-    expect(store.dispatch).toHaveBeenCalledTimes(1);
+    expect(baseProps.tripAction).toHaveBeenCalledTimes(1);
   });
 });

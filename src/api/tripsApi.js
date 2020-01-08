@@ -1,8 +1,6 @@
 import axios from "axios";
 
-const proxyUrl = "http://cors-anywhere.herokuapp.com/";
-const targetUrl = "https://api.gigacover.com/recruitment/challenge/";
-
-export const tripsApi = () => {
-  return axios.get(proxyUrl + targetUrl).then(res => res.data);
-};
+const targetUrl = process.env.REACT_APP_API_URL;
+console.log(`${targetUrl}?page=${1}`);
+export const tripsApi = page =>
+  axios.get(`${targetUrl}?page=${page}`).then(res => res.data);

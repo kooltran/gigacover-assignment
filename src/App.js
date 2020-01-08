@@ -1,29 +1,33 @@
 import React from "react";
 import { connect } from "react-redux";
-import { tripAction } from "./redux/tripAction";
+import { tripAction } from "./redux/actions/tripAction";
 import loadingGif from "./assets/loading.svg";
 import { TripItem } from "./tripItem/tripItem";
-import { StyledTripWrapper, StyledAppContainer } from "./App.styled";
+import {
+  StyledTripWrapper,
+  StyledAppContainer,
+  StyledAppTitle
+} from "./App.styled";
 
-class App extends React.Component {
+export class App extends React.Component {
   componentDidMount() {
-    this.props.tripAction();
+    this.props.tripAction(1);
   }
 
   render() {
-    const { data, fetchTripRequest } = this.props;
+    const { data, fetchState } = this.props;
 
     return (
       <StyledAppContainer>
-        {fetchTripRequest ? (
-          <img src={loadingGif} alt="loading" />
-        ) : (
-            <StyledTripWrapper>
-              {data.trips.map(trip => (
-                <TripItem key={trip.trip_id} tripData={trip} />
-              ))}
-            </StyledTripWrapper>
-          )}
+        {fetchState === "loading" && <img src={loadingGif} alt="loading" />}
+        {fetchState === "success" && (
+          <StyledTripWrapper>
+            <StyledAppTitle>Trips Management</StyledAppTitle>
+            {data.trips.map(trip => (
+              <TripItem key={trip.trip_id} tripData={trip} />
+            ))}
+          </StyledTripWrapper>
+        )}
       </StyledAppContainer>
     );
   }
@@ -31,8 +35,8 @@ class App extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    data: state.data,
-    fetchTripRequest: state.fetchTripRequest
+    data: state.tripReducer.data,
+    fetchState: state.tripReducer.fetchState
   };
 };
 

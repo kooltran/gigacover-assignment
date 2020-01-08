@@ -4,41 +4,53 @@ import {
   StyledTripLabel,
   StyledTripContent,
   StyledTripItem,
-  StyledTripImg
+  StyledTripInfoWrapper,
+  StyledTripTimeStamp,
+  StyledTripStartDay,
+  StyledTripEndDay,
+  StyledTripStatus,
+  StyledTripStatusText
 } from "./tripItem.styled";
 import { convertSecondToHours, convertToLongDate } from "../helpers";
-import tripImg from "../assets/trip_img.jpg";
 
 export const TripItem = ({ tripData }) => {
   return (
     <StyledTripItem>
-      <StyledTripItemGroup>
-        <StyledTripImg src={tripImg} alt="trip-placeholder" />
-      </StyledTripItemGroup>
-      <StyledTripItemGroup>
-        <StyledTripLabel>Duration</StyledTripLabel>
-        <StyledTripContent>
-          {convertSecondToHours(tripData.duration)}
-        </StyledTripContent>
-      </StyledTripItemGroup>
-      <StyledTripItemGroup>
-        <StyledTripLabel>Distance</StyledTripLabel>
-        <StyledTripContent>{tripData.distance} km</StyledTripContent>
-      </StyledTripItemGroup>
-      <StyledTripItemGroup>
-        <StyledTripLabel>Start Time</StyledTripLabel>
-        <StyledTripContent>
-          <div>{convertToLongDate(tripData.start_time).time}</div>
-          <div>{convertToLongDate(tripData.start_time).date}</div>
-        </StyledTripContent>
-      </StyledTripItemGroup>
-      <StyledTripItemGroup>
-        <StyledTripLabel>End Time</StyledTripLabel>
-        <StyledTripContent>
-          <div>{convertToLongDate(tripData.start_time).time}</div>
-          <div>{convertToLongDate(tripData.start_time).date}</div>
-        </StyledTripContent>
-      </StyledTripItemGroup>
+      <StyledTripTimeStamp>
+        <StyledTripEndDay>
+          {convertToLongDate(tripData.start_time).date}
+        </StyledTripEndDay>
+        <StyledTripStartDay>
+          {convertToLongDate(tripData.start_time).date}
+        </StyledTripStartDay>
+      </StyledTripTimeStamp>
+      <StyledTripInfoWrapper>
+        <StyledTripItemGroup>
+          <StyledTripLabel>Duration</StyledTripLabel>
+          <StyledTripContent>
+            {convertSecondToHours(tripData.duration)}
+          </StyledTripContent>
+        </StyledTripItemGroup>
+        <StyledTripItemGroup>
+          <StyledTripLabel>Distance</StyledTripLabel>
+          <StyledTripContent>{tripData.distance} km</StyledTripContent>
+        </StyledTripItemGroup>
+        <StyledTripItemGroup>
+          <StyledTripLabel>Start Time</StyledTripLabel>
+          <StyledTripContent>
+            <div>{convertToLongDate(tripData.start_time).time}</div>
+          </StyledTripContent>
+        </StyledTripItemGroup>
+        <StyledTripItemGroup>
+          <StyledTripLabel>End Time</StyledTripLabel>
+          <StyledTripContent>
+            <div>{convertToLongDate(tripData.start_time).time}</div>
+          </StyledTripContent>
+        </StyledTripItemGroup>
+      </StyledTripInfoWrapper>
+      <StyledTripStatus>
+        <StyledTripStatusText>Status</StyledTripStatusText>
+      </StyledTripStatus>
     </StyledTripItem>
   );
 };
