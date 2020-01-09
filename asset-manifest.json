@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/gigacover-assignment/static/js/main.a499078a.chunk.js",
-    "main.js.map": "/gigacover-assignment/static/js/main.a499078a.chunk.js.map",
+    "main.js": "/gigacover-assignment/static/js/main.781bfbb0.chunk.js",
+    "main.js.map": "/gigacover-assignment/static/js/main.781bfbb0.chunk.js.map",
     "runtime-main.js": "/gigacover-assignment/static/js/runtime-main.e9674f16.js",
     "runtime-main.js.map": "/gigacover-assignment/static/js/runtime-main.e9674f16.js.map",
     "static/js/2.55f3fdae.chunk.js": "/gigacover-assignment/static/js/2.55f3fdae.chunk.js",
     "static/js/2.55f3fdae.chunk.js.map": "/gigacover-assignment/static/js/2.55f3fdae.chunk.js.map",
     "index.html": "/gigacover-assignment/index.html",
-    "precache-manifest.0d7ec39d963d5ad5e441cc32e9be2725.js": "/gigacover-assignment/precache-manifest.0d7ec39d963d5ad5e441cc32e9be2725.js",
+    "precache-manifest.bfedead8985f5ad77e1187f1f782d464.js": "/gigacover-assignment/precache-manifest.bfedead8985f5ad77e1187f1f782d464.js",
     "service-worker.js": "/gigacover-assignment/service-worker.js",
     "static/js/2.55f3fdae.chunk.js.LICENSE": "/gigacover-assignment/static/js/2.55f3fdae.chunk.js.LICENSE",
     "static/media/loading.svg": "/gigacover-assignment/static/media/loading.e6e9715c.svg"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.e9674f16.js",
     "static/js/2.55f3fdae.chunk.js",
-    "static/js/main.a499078a.chunk.js"
+    "static/js/main.781bfbb0.chunk.js"
   ]
 }

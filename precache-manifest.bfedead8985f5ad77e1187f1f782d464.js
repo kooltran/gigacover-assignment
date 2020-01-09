@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68b62133d077dfbd43ee84eae66e7010",
+    "revision": "e75c885c8fb026a39429310658bea28a",
     "url": "/gigacover-assignment/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gigacover-assignment/static/js/2.55f3fdae.chunk.js.LICENSE"
   },
   {
-    "revision": "b2ad91bdebb8eb063591",
-    "url": "/gigacover-assignment/static/js/main.a499078a.chunk.js"
+    "revision": "ea00bc592e9861d8bb72",
+    "url": "/gigacover-assignment/static/js/main.781bfbb0.chunk.js"
   },
   {
     "revision": "b68f6243129c5e579202",
