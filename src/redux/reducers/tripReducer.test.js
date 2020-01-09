@@ -33,7 +33,9 @@ describe("trip reducer", () => {
     expect(
       tripReducder(undefined, {
         type: "FETCH_TRIP_FAIL",
-        res: "B"
+        error: {
+          message: "B"
+        }
       })
     ).toEqual({
       ...initialState,

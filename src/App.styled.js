@@ -4,7 +4,6 @@ import { COLORS } from "./variables";
 export const StyledTripWrapper = styled.div`
   display: flex;
   width: 100%;
-  margin: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -18,11 +17,11 @@ export const StyledTripWrapper = styled.div`
 `;
 
 export const StyledAppContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  text-align: center;
 `;
 
 export const StyledAppTitle = styled.div`
+  position: relative;
   background: ${COLORS.GREEN};
   width: 100%;
   font-size: 24px;

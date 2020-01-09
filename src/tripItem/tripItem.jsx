@@ -49,7 +49,7 @@ export const TripItem = ({ tripData }) => {
         </StyledTripItemGroup>
       </StyledTripInfoWrapper>
       <StyledTripStatus>
-        <StyledTripStatusText>Status</StyledTripStatusText>
+        <StyledTripStatusText>{tripData.trip_id}</StyledTripStatusText>
       </StyledTripStatus>
     </StyledTripItem>
   );

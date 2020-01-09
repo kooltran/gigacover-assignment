@@ -4,7 +4,7 @@ export const initialState = {
   error: null
 };
 
-export default function tripReducder(state = initialState, action) {
+export default function tripReducer(state = initialState, action) {
   switch (action.type) {
     case "FETCH_TRIP_REQUEST":
       return {
@@ -21,7 +21,7 @@ export default function tripReducder(state = initialState, action) {
       return {
         ...state,
         fetchState: "fail",
-        error: action.res
+        error: action.error.message
       };
     default:
       return state;

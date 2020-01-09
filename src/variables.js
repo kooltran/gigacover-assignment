@@ -3,3 +3,5 @@ export const COLORS = {
   WHITE: "#FFF",
   GRAY: "#eee"
 };
+
+export const MAXIMUM_PAGINATION = 4;
