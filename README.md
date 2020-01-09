@@ -1,6 +1,6 @@
 To install project in local enviroment you need:
 
-1. git clone https://github.com/kooltran/react-js-assignment.git
+1. git clone https://github.com/kooltran/reactjs-assignment.git
 2. cd react-js-assignment
 3. run command `yarn` - to install project
 4. run command `yarn start` - to run project on your localhost
