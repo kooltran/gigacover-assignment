@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce96a2034593f2a781dfded0d8cc897f",
+    "revision": "68b62133d077dfbd43ee84eae66e7010",
     "url": "/gigacover-assignment/index.html"
   },
   {
-    "revision": "6c92bdcdf940d2d53c65",
-    "url": "/gigacover-assignment/static/js/2.b1530f33.chunk.js"
+    "revision": "13352036e768959ab2ad",
+    "url": "/gigacover-assignment/static/js/2.55f3fdae.chunk.js"
   },
   {
     "revision": "7eb906b2d8ef627da08d7f4a543e6732",
-    "url": "/gigacover-assignment/static/js/2.b1530f33.chunk.js.LICENSE"
+    "url": "/gigacover-assignment/static/js/2.55f3fdae.chunk.js.LICENSE"
   },
   {
-    "revision": "417d5b3342366db968bb",
-    "url": "/gigacover-assignment/static/js/main.9a2b4f70.chunk.js"
+    "revision": "b2ad91bdebb8eb063591",
+    "url": "/gigacover-assignment/static/js/main.a499078a.chunk.js"
   },
   {
     "revision": "b68f6243129c5e579202",
